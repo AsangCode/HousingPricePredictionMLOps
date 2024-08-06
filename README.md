@@ -106,7 +106,7 @@ docker tag housing_price_prediction asangkumarsingh/unique_housing_price_predict
 docker push asangkumarsingh/unique_housing_price_prediction
 ```
 ## Docker hub repo:
-* https://hub.docker.com/r/asangkumarsingh/projecthousinpriceprediction/tags
+* https://hub.docker.com/repository/docker/asangkumarsingh/unique_housingpricepredictionmlops/general
 
 ## Dataset Link
 * https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
