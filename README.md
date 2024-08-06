@@ -52,6 +52,18 @@ python training_pipeline.py
 mlflow ui
 ```
 
+## Data version control (DVC)
+```bash
+dvc init
+dvc add notebooks/data/Housing.csv
+git add .
+git commit -m "Add data"
+git push
+git log
+git checkout <commit ID>
+dvc checkout
+```
+
 #### Command to train the pipeline
 ```bash
 python training_pipeline.py
@@ -61,7 +73,6 @@ python training_pipeline.py
 * Two types of prediction pipeline
 * Single record prediction
 * Batch prediction
-
 
 ## Explainer Dashboard
 
@@ -85,20 +96,9 @@ python app.py
 streamlit run streamlit_app.py
 ```
 
-## Data version control (DVC)
-```bash
-dvc init
-dvc add notebooks/data/Housing.csv
-git add .
-git commit -m "Add data"
-git push
-git log
-git checkout <commit ID>
-dvc checkout
-```
-
 ## Deployment of DockerImage
 ```bash
+docker ps
 docker build -t housing_price_prediction .
 docker run -p 8000:5000 housing_price_prediction
 docker login
