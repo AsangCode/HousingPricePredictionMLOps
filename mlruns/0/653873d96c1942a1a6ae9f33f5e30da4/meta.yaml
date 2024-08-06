@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/GitHub_Repo/HousingPricePredictionMLOps/mlruns/0/653873d96c1942a1a6ae9f33f5e30da4/artifacts
+end_time: 1722959177248
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 653873d96c1942a1a6ae9f33f5e30da4
+run_name: bouncy-frog-359
+run_uuid: 653873d96c1942a1a6ae9f33f5e30da4
+start_time: 1722959167525
+status: 3
+user_id: asang
+tags: []
+source_type: 4
+source_name: ''
+entry_point_name: ''
+source_version: ''
