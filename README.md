@@ -48,13 +48,13 @@ pip install -r requirement.txt
 
 ## MLFlow
 ```bash
-python src/HousingPricePrediction/pipelines/training_pipeline.py
+python training_pipeline.py
 mlflow ui
 ```
 
 #### Command to train the pipeline
 ```bash
-python src\HousingPricePrediction\pipelines\training_pipeline.py
+python training_pipeline.py
 ```
 
 ### Prediction Pipeline
