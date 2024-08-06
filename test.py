@@ -1,5 +1,5 @@
 # test_prediction_pipeline.py
-from src.HousingPricePrediction.pipelines.prediction_pipeline import CustomData, PredictPipeline
+from prediction_pipeline import CustomData, PredictPipeline
 import numpy as np
 
 def test_prediction_pipeline():
