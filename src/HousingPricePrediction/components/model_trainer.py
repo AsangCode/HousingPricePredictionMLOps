@@ -8,6 +8,7 @@ from sklearn.model_selection import GridSearchCV
 from src.HousingPricePrediction.logger import logging
 from src.HousingPricePrediction.exception import CustomException
 from src.HousingPricePrediction.utils.utils import save_object, load_object
+from src.HousingPricePrediction.utils.utils import evaluate_model
 from explainerdashboard import RegressionExplainer, ExplainerDashboard
 
 @dataclass
@@ -70,7 +71,9 @@ class ModelTrainer:
                     best_model_score = best_score
                     best_model_name = model_name
                     best_model = best_estimator
-
+            
+            print(f'{model_name} best score: {best_score} with params: {grid_search.best_params_}')
+            print('\n====================================================================================\n')
             print(f'Best Model Found, Model Name: {best_model_name}, R2 Score: {best_model_score}')
             print('\n====================================================================================\n')
             logging.info(f'Best Model Found, Model Name: {best_model_name}, R2 Score: {best_model_score}')

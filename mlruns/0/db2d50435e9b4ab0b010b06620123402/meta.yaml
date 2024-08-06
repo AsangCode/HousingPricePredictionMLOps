@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/GitHub_Repo/HousingPricePredictionMLOps/mlruns/0/db2d50435e9b4ab0b010b06620123402/artifacts
+end_time: 1722960325370
+experiment_id: '0'
+lifecycle_stage: active
+run_id: db2d50435e9b4ab0b010b06620123402
+run_name: dashing-vole-48
+run_uuid: db2d50435e9b4ab0b010b06620123402
+start_time: 1722960309226
+status: 3
+user_id: asang
+tags: []
+source_type: 4
+source_name: ''
+entry_point_name: ''
+source_version: ''

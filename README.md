@@ -48,13 +48,25 @@ pip install -r requirement.txt
 
 ## MLFlow
 ```bash
-python src/HousingPricePrediction/pipelines/training_pipeline.py
+python training_pipeline.py
 mlflow ui
+```
+
+## Data version control (DVC)
+```bash
+dvc init
+dvc add notebooks/data/Housing.csv
+git add .
+git commit -m "Add data"
+git push
+git log
+git checkout <commit ID>
+dvc checkout
 ```
 
 #### Command to train the pipeline
 ```bash
-python src\HousingPricePrediction\pipelines\training_pipeline.py
+python training_pipeline.py
 ```
 
 ### Prediction Pipeline
@@ -83,18 +95,6 @@ python app.py
 ## Streamlit App
 ```bash
 streamlit run streamlit_app.py
-```
-
-## Data version control (DVC)
-```bash
-dvc init
-dvc add notebooks/data/Housing.csv
-git add .
-git commit -m "Add data"
-git push
-git log
-git checkout <commit ID>
-dvc checkout
 ```
 
 ## Deployment of DockerImage
