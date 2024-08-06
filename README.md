@@ -99,11 +99,11 @@ streamlit run streamlit_app.py
 ## Deployment of DockerImage
 ```bash
 docker ps
-docker build -t housing_price_prediction .
-docker run -p 8000:5000 housing_price_prediction
+docker build -t housingpricepredictionmlops .
+docker run -p 5000:8000 housingpricepredictionmlops
 docker login
-docker tag housing_price_prediction asangkumarsingh/unique_housing_price_prediction
-docker push asangkumarsingh/unique_housing_price_prediction
+docker tag housingpricepredictionmlops asangkumarsingh/unique_housingpricepredictionmlops
+docker push asangkumarsingh/unique_housingpricepredictionmlops
 ```
 ## Docker hub repo:
 * https://hub.docker.com/repository/docker/asangkumarsingh/unique_housingpricepredictionmlops/general
