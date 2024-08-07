@@ -47,20 +47,37 @@ pip install -r requirement.txt
 * Model Builing (Create a model using the processed data)
 
 ## MLFlow
+
 ```bash
 python training_pipeline.py
+```
+```bash
 mlflow ui
 ```
 
 ## Data version control (DVC)
 ```bash
 dvc init
+```
+```bash
 dvc add notebooks/data/Housing.csv
+```
+```bash
 git add .
+```
+```bash
 git commit -m "Add data"
+```
+```bash
 git push
+```
+```bash
 git log
+```
+```bash
 git checkout <commit ID>
+```
+```bash
 dvc checkout
 ```
 
@@ -73,6 +90,7 @@ python training_pipeline.py
 * Two types of prediction pipeline
 * Single record prediction
 * Batch prediction
+
 
 ## Explainer Dashboard
 
@@ -98,15 +116,25 @@ streamlit run streamlit_app.py
 
 ## Deployment of DockerImage
 ```bash
-docker ps
-docker build -t housingpricepredictionmlops .
-docker run -p 5000:8000 housingpricepredictionmlops
+docker build -t housing_price_prediction .
+```
+```bash
+docker run -p 8000:5000 housing_price_prediction
+```
+```bash
 docker login
-docker tag housingpricepredictionmlops asangkumarsingh/unique_housingpricepredictionmlops
-docker push asangkumarsingh/unique_housingpricepredictionmlops
+```
+```bash
+docker tag housing_price_prediction asangkumarsingh/unique_housing_price_prediction
+```
+```bash7
+docker push asangkumarsingh/unique_housing_price_prediction
 ```
 ## Docker hub repo:
-* https://hub.docker.com/repository/docker/asangkumarsingh/unique_housingpricepredictionmlops/general
+* https://hub.docker.com/r/asangkumarsingh/projecthousinpriceprediction/tags
 
 ## Dataset Link
 * https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
+
+## PYI PI Repo
+* https://pypi.org/project/uniqueHousingPricePredictionMLOps/
